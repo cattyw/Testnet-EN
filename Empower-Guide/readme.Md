@@ -6,6 +6,7 @@
 # [Twitter](https://twitter.com/empowerchain_io) | [Discord](https://discord.gg/nVTPukf2) | [Github](https://github.com/EmpowerPlastic) | [Docs](https://docs.empowerchain.io/)
  
  </div>
+ 
 ## Hello everyone, the highly anticipated reward-winning testnet of EmpowerChain has started.
 ## Before starting the installation, here's what you need to know:
 > The Testnet consists of 3 stages:
