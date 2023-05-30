@@ -1,36 +1,45 @@
 <h1 align="center">EmpowerChain | Circulus Testnet</h1>
 <div align="center">
-image
 
-Twitter | Discord | Github | Docs
+ ![image](https://github.com/0xSocrates/Testnet-Rehberler/assets/108215275/f5e9add1-5b55-40d2-83dd-539cbf64c266) 
+
+# [Twitter](https://twitter.com/empowerchain_io) | [Discord](https://discord.gg/nVTPukf2) | [Github](https://github.com/EmpowerPlastic) | [Docs](https://docs.empowerchain.io/
+ 
  </div>
-Hello everyone, the highly anticipated reward-winning testnet of EmpowerChain has started.
-Before starting the installation, here's what you need to know:
-The Testnet consists of 3 stages:
+## Hello everyone, the highly anticipated reward-winning testnet of EmpowerChain has started.
+## Before starting the installation, here's what you need to know:
+> The Testnet consists of 3 stages:
 
-Stage 1: May 31st - June 6th: Network bootstrapping phase
-Stage 2: June 7th - June 20th: Main phase
-Stage 3: June 21st - June 25th: Stress testing phase
-Rewards have a linear vesting period of 1 year.
+> - Stage 1: May 31st - June 6th: Network bootstrapping phase
+> - Stage 2: June 7th - June 20th: Main phase
+> - Stage 3: June 21st - June 25th: Stress testing phase
 
-KYC will be required at the end of the Testnet.
+> Rewards have a linear vesting period of 1 year.
 
-Requirements: 4 CPU cores, 16GB RAM, 500+ GB SSD.
+> KYC will be required at the end of the Testnet.
+>
+> Requirements: 4 CPU cores, 16GB RAM, 500+ GB SSD.
+>
 
-Make sure to read this document to find answers to all your questions about the Testnet.
+## Make sure to read this document to find answers to all your questions about the Testnet.
 For installation-related questions and discussions, you can join the Core Node Discord and Telegram channels.
-To install using a script, enter the following command:
-bash
-Copy code
-curl -sSL -o empower-installation.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Empower%20Chain/empower-installation.sh && chmod +x empower-installation.sh && bash ./empower-installation.sh
-For those who want to do a manual installation, refer to this guide.
-After completing the installation, create a wallet
-csharp
-Copy code
+
+### To install using a script, enter the following command:
+
+```
+curl -sSL -o empower-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Empower%20Chain/empower-kurulum.sh && chmod +x empower-kurulum.sh && bash ./empower-kurulum.sh
+``` 
+
+
+For those who want to do a manual installation, refer to this [guide](https://github.com/0xSocrates/Testnet-Rehberler/edit/main/Empower%20Chain/Manuel-Kurulum.md)
+
+### After completing the installation, create a wallet
+```
 empowerd keys add wallet
-Wait for synchronization and then create a validator
-lua
-Copy code
+```
+
+### Wait for synchronization and then create a validator
+```
 empowerd tx staking create-validator \
   --amount 1000000umpwr \
   --from wallet \
@@ -40,20 +49,28 @@ empowerd tx staking create-validator \
   --min-self-delegation "1" \
   --pubkey  $(empowerd tendermint show-validator) \
   --moniker $MONIKER \
-  --website "yourwebsite" \
-  --identity keybase.io username \
+  --website "websiteniz"
+  --identity keybase.io idniz \
   --details "Core Node Community" \
-  --chain-id circulus-1 \
-  --yes
-Useful Links
-Commands
-Backing up and Moving the Node
-Changing Ports
-Sync Peer FAQ
-<div align="center">
-Core Node
-Twitter | Discord | Telegram
-1500x500
+  --chain-id circulus-1
+  --y
+ ```
+# Useful Links
 
-If you have any questions, you can join our Telegram chat group and Discord server.
+## [Commands](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Ortak-Komutlar.md)
+## [Node Backup](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Yedekleme%20ve%20Ta%C5%9F%C4%B1ma.md)
+## [Port Change](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Port%20de%C4%9Fi%C5%9Ftirme.md)
+## [Sync-Peer-FAQ](https://github.com/Core-Node-Team/Cosmos-Aglarinda-Node-Calistirmak/blob/main/Sync-Peer%20Nedir.md)
+
+<div align="center">
+
+# Core Node 
+
+#  [Twitter](https://twitter.com/corenodeHQ)|[Discord](https://discord.gg/fzzUAU9k)|[Telegram](https://t.me/corenodechat)  
+
+![1500x500](https://github.com/Core-Node-Team/Testnet-TR/assets/108215275/92b50dd4-8043-4500-b906-bc8d15b75525)
+
+## If you have any questions, you can join our Telegram chat group and Discord server.
+#
+
 </div>
