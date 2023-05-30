@@ -22,7 +22,7 @@
 > Requirements: 4 CPU cores, 16GB RAM, 500+ GB SSD.
 >
 
-## Make sure to read this document to find answers to all your questions about the Testnet.
+## Make sure to read this [documents](https://docs.empowerchain.io/testnet/overview) to find answers to all your questions about the Testnet.
 For installation-related questions and discussions, you can join the Core Node Discord and Telegram channels.
 
 ### To install using a script, enter the following command:
