@@ -3,7 +3,7 @@
 
  ![image](https://github.com/0xSocrates/Testnet-Rehberler/assets/108215275/f5e9add1-5b55-40d2-83dd-539cbf64c266) 
 
-# [Twitter](https://twitter.com/empowerchain_io) | [Discord](https://discord.gg/nVTPukf2) | [Github](https://github.com/EmpowerPlastic) | [Docs](https://docs.empowerchain.io/
+# [Twitter](https://twitter.com/empowerchain_io) | [Discord](https://discord.gg/nVTPukf2) | [Github](https://github.com/EmpowerPlastic) | [Docs](https://docs.empowerchain.io/)
  
  </div>
 ## Hello everyone, the highly anticipated reward-winning testnet of EmpowerChain has started.
