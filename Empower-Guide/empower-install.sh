@@ -16,11 +16,11 @@ echo -e '\e[0m'
 echo -e ''
 echo -e ''
 sleep 4
-echo -e "\e[0;34mEmpower Kurulumu Başlatılıyor\033[0m"
+echo -e "\e[0;34mEmpower Installation Started\033[0m"
 echo -e ''
 sleep 2
-echo -e '\e[0;35m' && read -p "Moniker isminizi girin: " MONIKER 
-echo -e "\033[035mMoniker isminiz\033[034m $MONIKER \033[035molarak kaydedildi"
+echo -e '\e[0;35m' && read -p "Enter your Moniker: " MONIKER 
+echo -e "\033[035mYour Moniker is\033[034m $MONIKER \033[035mand has been saved"
 echo -e '\e[0m'
 echo "export MONIKER=$MONIKER" >> $HOME/.bash_profile
 echo -e ''
@@ -34,7 +34,7 @@ sudo rm -rf $(which empowerd)
 exec > /dev/tty 2>&1
 echo -e ''
 sleep 1
-echo -e "\e[0;34mSunucu Güncelleniyor\033[0m"
+echo -e "\e[0;34mUpdating the Server\033[0m"
 sleep 1
 exec > /dev/null 2>&1
 sudo apt-get update -y && sudo apt-get upgrade -y
@@ -42,7 +42,7 @@ exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
 echo -e ''
 sleep 1
-echo -e "\e[0;34mKütüphaneler Kuruluyor\033[0m"
+echo -e "\e[0;34mInstalling Dependencies\033[0m"
 sleep 1
 exec > /dev/null 2>&1
 sudo apt install curl tar wget tmux htop net-tools clang pkg-config libssl-dev jq build-essential git screen make ncdu -y
@@ -50,7 +50,7 @@ exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
 echo -e ''
 sleep 1
-echo -e "\e[0;34mGo Yükleniyor\033[0m"
+echo -e "\e[0;34mInstalling Go\033[0m"
 exec > /dev/null 2>&1
 cd
 wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
@@ -62,10 +62,10 @@ echo 'export GO111MODULE=on' >> $HOME/.bash_profile &&  . $HOME/.bash_profile
 rm -rf go1.20.4.linux-amd64.tar.gz
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
-echo -e "\e[0;33m$(go version) Kuruldu\033[0m"
+echo -e "\e[0;33mInstalled Go $(go version)\033[0m"
 echo -e ''
 sleep 1
-echo -e "\e[0;34mEmpowerchain Kuruluyor\033[0m"
+echo -e "\e[0;34mInstalling Empowerchain\033[0m"
 sleep 1
 exec > /dev/null 2>&1
 cd /$HOME
@@ -75,10 +75,10 @@ git checkout v0.0.3
 make install 
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m✔'
-echo -e "\e[0;33mEmpowerd $(empowerd version) Kuruldu\033[0m"
+echo -e "\e[0;33mInstalled Empowerd $(empowerd version)\033[0m"
 sleep 1
 echo -e ''
-echo -e "\e[0;34mYapılandırma Dosyası Ayarları Yapılıyor\033[0m"
+echo -e "\e[0;34mConfiguring the Settings File\033[0m"
 sleep 1
 exec > /dev/null 2>&1
 empowerd config chain-id circulus-1
@@ -97,7 +97,7 @@ sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.
 sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:15017\"%; s%^address = \":8080\"%address = \":15080\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:15090\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:15091\"%; s%:8545%:15045%; s%:8546%:15046%; s%:6065%:15065%" $HOME/.empowerchain/config/app.toml
 exec > /dev/tty 2>&1
 echo -e '\e[0;32m'
-echo -e "İnitalize ✔"
+echo -e "Initialized ✔"
 sleep 1
 echo -e "Min gas price ✔"
 sleep 1
@@ -131,13 +131,13 @@ sudo systemctl start empowerd
 sudo systemctl restart empowerd
 exec > /dev/tty 2>&1
 echo -e ' '
-echo -e "\e[0;34mNode Başlatıldı\033[0m"
+echo -e "\e[0;34mNode Started\033[0m"
 sleep 1
 echo -e ""
-echo -e "\e[0;32mLogları Görüntülemek İçin:\033[0;33m           sudo journalctl -u empowerd -fo cat\e[0m"
+echo -e "\e[0;32mTo View Logs, Run:\033[0;33m           sudo journalctl -u empowerd -fo cat\e[0m"
 echo -e ""
 echo -e ""
-echo -e "\e[0;34mKurulum Tamamlandı\e[0m\u2600"
+echo -e "\e[0;34mInstallation Completed\e[0m\u2600"
 echo -e ""
 echo -e ""
 echo -e '\e[0;35m'
@@ -154,4 +154,4 @@ echo ""
 echo -e ""
 echo -e '\e[0m' 
 sleep 3
-curl -sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Scripts/y%C4%B1ld%C4%B1z.sh | bash
+curl -sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Scripts/yıldız.sh | bash
