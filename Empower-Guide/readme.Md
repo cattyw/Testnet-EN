@@ -28,7 +28,7 @@ For installation-related questions and discussions, you can join the Core Node D
 ### To install using a script, enter the following command:
 
 ```
-curl -sSL -o empower-kurulum.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-TR/main/Empower%20Chain/empower-kurulum.sh && chmod +x empower-kurulum.sh && bash ./empower-kurulum.sh
+curl -sSL -o empower-install.sh https://raw.githubusercontent.com/Core-Node-Team/Testnet-EN/main/Empower-Guide/empower-install.sh && chmod +x empower-install.sh && bash ./empower-install.sh
 ``` 
 
 
