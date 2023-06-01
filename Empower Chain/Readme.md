@@ -32,7 +32,7 @@ curl -sSL -o empower-install.sh https://raw.githubusercontent.com/Core-Node-Team
 ``` 
 
 
-For those who want to do a manual installation, refer to this [guide](https://github.com/0xSocrates/Testnet-Rehberler/edit/main/Empower%20Chain/Manuel-Kurulum.md)
+For those who want to do a manual installation, refer to this [guide](https://github.com/Core-Node-Team/Testnet-EN/blob/main/Empower%20Chain/Manuel-Install.md)
 
 ### After completing the installation, create a wallet
 ```
