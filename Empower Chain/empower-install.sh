@@ -1,3 +1,4 @@
+corenode() {
 #!/bin/bash
 clear
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Scripts/matrix.sh | bash
@@ -143,7 +144,6 @@ sudo systemctl start empowerd
 sudo systemctl restart empowerd
 sleep 2
 source $HOME/.bash_profile
-sudo systemctl restart empowerd
 exec > /dev/tty 2>&1
 echo -e ' '
 echo -e "\e[0;34mNode Started\033[0m"
@@ -173,3 +173,6 @@ echo -e '\e[0m'
 sleep 3
 curl -sSL https://raw.githubusercontent.com/0xSocrates/Testnet-Rehberler/main/Scripts/yıldız.sh | bash
 sleep 1
+source $HOME/.bash_profile
+}
+corenode
