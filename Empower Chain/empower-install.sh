@@ -141,6 +141,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable empowerd
 sudo systemctl start empowerd
 sudo systemctl restart empowerd
+sleep 2
+source $HOME/.bash_profile
+sudo systemctl restart empowerd
 exec > /dev/tty 2>&1
 echo -e ' '
 echo -e "\e[0;34mNode Started\033[0m"
