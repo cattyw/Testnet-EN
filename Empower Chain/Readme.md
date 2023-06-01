@@ -42,20 +42,20 @@ empowerd keys add wallet
 ### Wait for synchronization and then create a validator
 ```
 empowerd tx staking create-validator \
-  --amount 1000000umpwr \
+  --amount 8000000umpwr \
   --from wallet \
   --commission-max-change-rate "0.01" \
   --commission-max-rate "0.2" \
-  --commission-rate "0.1" \
+  --commission-rate "0.06" \
   --min-self-delegation "1" \
   --pubkey  $(empowerd tendermint show-validator) \
-  --moniker $MONIKER \
-  --website "websiteniz"
-  --identity keybase.io idniz \
+  --moniker <MONIKER> \
+  --website "<YOUR-WEBSITE>" \
+  --identity <KEYBASE.IO-ID> \
   --details "Core Node Community" \
   --chain-id circulus-1
   --y
- ```
+```
 # Useful Links
 
 ## [Commands](https://github.com/Core-Node-Team/CosmosSDK-Node/blob/main/Ortak-Komutlar.md)
